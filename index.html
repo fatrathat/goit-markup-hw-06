@@ -446,48 +446,46 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="button-modal" data-modal-close>
+        <button type="button" class="button-close" data-modal-close>
           <svg class="icon-close">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="modal-form">
-          <p class="modal-form-text">Оставьте свои данные, мы вам перезвоним</p>
-          <ul class="list modal-form-list">
-            <li class="modal-form-item">
-              <label>
-                Имя
-                <input type="text" name="UserName" />
-              </label>
-            </li>
-            <li class="modal-form-item">
-              <label>
-                Телефон
-                <input type="tel" name="UserName" />
-              </label>
-            </li>
-            <li class="modal-form-item">
-              <label>
-                Почта
-                <input type="email" name="UserName" />
-              </label>
-            </li>
-            <li class="modal-form-item">
-              <label>
-                Комментарий
-                <textarea
-                  name="feedback"
-                  rows="5"
-                  placeholder="Введите текст"
-                  style="resize: none"
-                ></textarea>
-              </label>
-            </li>
-          </ul>
-          <label>
-            <input type="checkbox" />
-            Соглашаюсь с рассылкой и принимаю Условия договора
+        <form action="#" class="modal-form">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="modal-input-container">
+            <label class="modal-text"
+              >Имя<input type="text" name="user-name" required class="modal-input focus-input" />
+            </label>
+          </div>
+          <div class="modal-input-container">
+            <label class="modal-text"
+              >Телефон<input type="tel" name="mobile" required class="modal-input focus-input"
+            /></label>
+          </div>
+          <div class="modal-input-container">
+            <label class="modal-text"
+              >Почта<input type="email" name="email" required class="modal-input focus-input"
+            /></label>
+          </div>
+          <div class="modal-input-container">
+            <label class="modal-text">
+              Комментарий
+              <textarea
+                name="user-text"
+                placeholder="Введите текст"
+                class="modal-textarea focus-input"
+              ></textarea>
+            </label>
+          </div>
+
+          <label class="modal-check">
+            <input type="checkbox" required class="modal-checkbox" />Соглашаюсь с рассылкой и
+            принимаю
+            <a href="">Условия договора</a>
           </label>
+
+          <button type="submit" class="modal-button">Отправить</button>
         </form>
       </div>
     </div>
