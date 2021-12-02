@@ -736,33 +736,6 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-modal-check {
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-}
-
-.modal-checkbox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-.checkbox-text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--second-text-color);
-}
-
 .modal-button {
   display: block;
   margin: 0 auto;
