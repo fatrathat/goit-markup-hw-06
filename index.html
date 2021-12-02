@@ -444,7 +444,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="button-close" data-modal-close>
           <svg class="icon-close">
@@ -479,17 +479,22 @@
             </label>
           </div>
 
-          <label class="modal-check">
-            <input type="checkbox" required class="modal-checkbox" />Соглашаюсь с рассылкой и
-            принимаю
-            <a href="">Условия договора</a>
-          </label>
+          <div class="checkbox-container">
+            <svg class="icon-modal-check">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+            <input type="checkbox" class="modal-checkbox" name="checkbox" id="checkbox" />
+            <label class="checkbox-text" for="checkbox"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="link">Условия договора</a></label
+            >
+          </div>
 
           <button type="submit" class="modal-button">Отправить</button>
         </form>
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
